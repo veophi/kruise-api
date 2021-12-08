@@ -19,8 +19,8 @@ limitations under the License.
 package v1alpha1
 
 import (
-	"github.com/openkruise/kruise-api/client/clientset/versioned/scheme"
-	v1alpha1 "github.com/openkruise/kruise-api/policy/v1alpha1"
+	"github.com/veophi/kruise-api/client/clientset/versioned/scheme"
+	v1alpha1 "github.com/veophi/kruise-api/policy/v1alpha1"
 	rest "k8s.io/client-go/rest"
 )
 

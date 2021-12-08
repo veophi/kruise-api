@@ -19,13 +19,15 @@ limitations under the License.
 package v1alpha1
 
 import (
-	internalinterfaces "github.com/openkruise/kruise-api/client/informers/externalversions/internalinterfaces"
+	internalinterfaces "github.com/veophi/kruise-api/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.
 type Interface interface {
 	// AdvancedCronJobs returns a AdvancedCronJobInformer.
 	AdvancedCronJobs() AdvancedCronJobInformer
+	// BatchReleases returns a BatchReleaseInformer.
+	BatchReleases() BatchReleaseInformer
 	// BroadcastJobs returns a BroadcastJobInformer.
 	BroadcastJobs() BroadcastJobInformer
 	// CloneSets returns a CloneSetInformer.
@@ -66,6 +68,11 @@ func New(f internalinterfaces.SharedInformerFactory, namespace string, tweakList
 // AdvancedCronJobs returns a AdvancedCronJobInformer.
 func (v *version) AdvancedCronJobs() AdvancedCronJobInformer {
 	return &advancedCronJobInformer{factory: v.factory, namespace: v.namespace, tweakListOptions: v.tweakListOptions}
+}
+
+// BatchReleases returns a BatchReleaseInformer.
+func (v *version) BatchReleases() BatchReleaseInformer {
+	return &batchReleaseInformer{factory: v.factory, namespace: v.namespace, tweakListOptions: v.tweakListOptions}
 }
 
 // BroadcastJobs returns a BroadcastJobInformer.

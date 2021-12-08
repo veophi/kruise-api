@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	v1alpha1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/apps/v1alpha1"
+	v1alpha1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/apps/v1alpha1"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )
@@ -30,6 +30,10 @@ type FakeAppsV1alpha1 struct {
 
 func (c *FakeAppsV1alpha1) AdvancedCronJobs(namespace string) v1alpha1.AdvancedCronJobInterface {
 	return &FakeAdvancedCronJobs{c, namespace}
+}
+
+func (c *FakeAppsV1alpha1) BatchReleases(namespace string) v1alpha1.BatchReleaseInterface {
+	return &FakeBatchReleases{c, namespace}
 }
 
 func (c *FakeAppsV1alpha1) BroadcastJobs(namespace string) v1alpha1.BroadcastJobInterface {

@@ -19,8 +19,8 @@ limitations under the License.
 package policy
 
 import (
-	internalinterfaces "github.com/openkruise/kruise-api/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/openkruise/kruise-api/client/informers/externalversions/policy/v1alpha1"
+	internalinterfaces "github.com/veophi/kruise-api/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/veophi/kruise-api/client/informers/externalversions/policy/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

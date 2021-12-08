@@ -19,13 +19,13 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/openkruise/kruise-api/client/clientset/versioned"
-	appsv1alpha1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/apps/v1alpha1"
-	fakeappsv1alpha1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/apps/v1alpha1/fake"
-	appsv1beta1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/apps/v1beta1"
-	fakeappsv1beta1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/apps/v1beta1/fake"
-	policyv1alpha1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/policy/v1alpha1"
-	fakepolicyv1alpha1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/policy/v1alpha1/fake"
+	clientset "github.com/veophi/kruise-api/client/clientset/versioned"
+	appsv1alpha1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/apps/v1alpha1"
+	fakeappsv1alpha1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/apps/v1alpha1/fake"
+	appsv1beta1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/apps/v1beta1"
+	fakeappsv1beta1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/apps/v1beta1/fake"
+	policyv1alpha1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/policy/v1alpha1"
+	fakepolicyv1alpha1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/policy/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

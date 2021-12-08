@@ -21,9 +21,9 @@ package versioned
 import (
 	"fmt"
 
-	appsv1alpha1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/apps/v1alpha1"
-	appsv1beta1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/apps/v1beta1"
-	policyv1alpha1 "github.com/openkruise/kruise-api/client/clientset/versioned/typed/policy/v1alpha1"
+	appsv1alpha1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/apps/v1alpha1"
+	appsv1beta1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/apps/v1beta1"
+	policyv1alpha1 "github.com/veophi/kruise-api/client/clientset/versioned/typed/policy/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

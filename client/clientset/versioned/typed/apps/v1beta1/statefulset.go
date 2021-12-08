@@ -22,8 +22,8 @@ import (
 	"context"
 	"time"
 
-	v1beta1 "github.com/openkruise/kruise-api/apps/v1beta1"
-	scheme "github.com/openkruise/kruise-api/client/clientset/versioned/scheme"
+	v1beta1 "github.com/veophi/kruise-api/apps/v1beta1"
+	scheme "github.com/veophi/kruise-api/client/clientset/versioned/scheme"
 	autoscalingv1 "k8s.io/api/autoscaling/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"

@@ -19,14 +19,15 @@ limitations under the License.
 package v1alpha1
 
 import (
-	v1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
-	"github.com/openkruise/kruise-api/client/clientset/versioned/scheme"
+	v1alpha1 "github.com/veophi/kruise-api/apps/v1alpha1"
+	"github.com/veophi/kruise-api/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 
 type AppsV1alpha1Interface interface {
 	RESTClient() rest.Interface
 	AdvancedCronJobsGetter
+	BatchReleasesGetter
 	BroadcastJobsGetter
 	CloneSetsGetter
 	ContainerRecreateRequestsGetter
@@ -48,6 +49,10 @@ type AppsV1alpha1Client struct {
 
 func (c *AppsV1alpha1Client) AdvancedCronJobs(namespace string) AdvancedCronJobInterface {
 	return newAdvancedCronJobs(c, namespace)
+}
+
+func (c *AppsV1alpha1Client) BatchReleases(namespace string) BatchReleaseInterface {
+	return newBatchReleases(c, namespace)
 }
 
 func (c *AppsV1alpha1Client) BroadcastJobs(namespace string) BroadcastJobInterface {

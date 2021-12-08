@@ -19,9 +19,9 @@ limitations under the License.
 package apps
 
 import (
-	v1alpha1 "github.com/openkruise/kruise-api/client/informers/externalversions/apps/v1alpha1"
-	v1beta1 "github.com/openkruise/kruise-api/client/informers/externalversions/apps/v1beta1"
-	internalinterfaces "github.com/openkruise/kruise-api/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/veophi/kruise-api/client/informers/externalversions/apps/v1alpha1"
+	v1beta1 "github.com/veophi/kruise-api/client/informers/externalversions/apps/v1beta1"
+	internalinterfaces "github.com/veophi/kruise-api/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

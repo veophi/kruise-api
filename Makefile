@@ -18,7 +18,7 @@ CONTROLLER_GEN = $(shell pwd)/bin/controller-gen-0.7
 controller-gen: ## Download controller-gen locally if necessary.
 	$(call go-get-tool-with-alias,$(CONTROLLER_GEN),sigs.k8s.io/controller-tools/cmd/controller-gen@v0.7.0,controller-gen)
 
-# go-get-tool will 'go get' any package $2 and install it to $1.
+# go-get-toovel will 'go get' any package $2 and install it to $1.
 PROJECT_DIR := $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))
 define go-get-tool-with-alias
 @[ -f $(1) ] || { \
