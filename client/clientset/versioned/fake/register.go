@@ -19,9 +19,9 @@ limitations under the License.
 package fake
 
 import (
-	appsv1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
-	appsv1beta1 "github.com/openkruise/kruise-api/apps/v1beta1"
-	policyv1alpha1 "github.com/openkruise/kruise-api/policy/v1alpha1"
+	appsv1alpha1 "github.com/veophi/kruise-api/apps/v1alpha1"
+	appsv1beta1 "github.com/veophi/kruise-api/apps/v1beta1"
+	policyv1alpha1 "github.com/veophi/kruise-api/policy/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
